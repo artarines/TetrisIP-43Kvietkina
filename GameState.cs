@@ -1,0 +1,109 @@
+﻿namespace TetrisWPF
+{
+    public class GameState
+    {
+        private Block currentBlock;
+        public Block CurrentBlock
+        {
+            get => currentBlock;
+            private set
+            {
+                currentBlock = value;
+                currentBlock.Reset();
+            }
+        }
+
+        public GameGrid GameGrid { get; }
+        public BlockQueue BlockQueue { get; }
+        public bool GameOver { get; private set; }
+        public GameState()
+        {
+            GameGrid = new GameGrid(22, 10);
+            BlockQueue = new BlockQueue();
+            CurrentBlock = BlockQueue.GetAndUpdate();
+        }
+        // метод щоб знайти чи знаходиться блок в легальній позиції чи ні
+        // цей метод перевіряє позиції плиток поточної фігури, якщо якась клітинка знаходиться поза сіткою
+        // або перекривається іншою фігурою, вертаємо 0, інакше 1
+        private bool BlockFits()
+        {
+            foreach (Position p in CurrentBlock.TilePositions()) 
+            {
+                if (!GameGrid.IsEmpty(p.Row, p.Column))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        // поворот блоку за год стрілкою, з того місця де він є враховуючи обмеження сітки
+        public void RotateBlockCW()
+        {
+            CurrentBlock.RotateCW();
+            if (!BlockFits())
+            {
+                CurrentBlock.RotateCCW();
+            }
+        }
+        // проти год стрілки
+        public void RotateBlockCCW()
+        {
+            CurrentBlock.RotateCCW();
+            if (!BlockFits())
+            {
+                CurrentBlock.RotateCW();
+            }
+        }
+
+        // рухи вліво/вправо
+        public void MoveBlockLeft()
+        {
+            CurrentBlock.Move(0, -1);
+            if (!BlockFits())
+            {
+                CurrentBlock.Move(0, 1);
+            }
+        }
+        public void MoveBlockRight()
+        {
+            CurrentBlock.Move(0, 1);
+            if (!BlockFits())
+            {
+                CurrentBlock.Move(0, -1);
+            }
+        }
+        // перевірка чи закінчилась гра
+        private bool IsGameOver()
+        {
+            return !(GameGrid.IsRowEmpty(0) && GameGrid.IsRowEmpty(1));
+        }
+        // перевіряємо позиції в сітці відповідно до ідентифікторів фігур
+        // очистка всіх потенційних рядків і перевірка чи завершилася гра
+        private void PlaceBlock()
+        {
+            foreach (Position p in CurrentBlock.TilePositions())
+            {
+                GameGrid[p.Row, p.Column] = CurrentBlock.Id;
+            }
+            GameGrid.ClearFullRows();
+
+            if (IsGameOver())
+            {
+                GameOver = true;
+            }
+            else
+            {
+                CurrentBlock = BlockQueue.GetAndUpdate();
+            }
+        }
+        public void MoveBlockDown()
+        {
+            CurrentBlock.Move(1, 0);
+            if (!BlockFits())
+            {
+                CurrentBlock.Move(-1, 0);
+                PlaceBlock();
+            }
+        }
+    }
+}
