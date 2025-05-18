@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TetrisWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="414" Width="1176"
-        MinWidth="414" MinHeight="736"
+        Title="MainWindow" Height="414" Width="736"
+        MinWidth="736" MinHeight="414"
         Foreground="Pink"
         FontFamily="Segoe UI Light" FontSize="28"
         KeyDown="Window_KeyDown">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -23,7 +23,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.Background>
-            <ImageBrush ImageSource="AssetsRes/1.jpeg"/>
+            <ImageBrush ImageSource="AssetsRes/35.jpeg"/>
         </Grid.Background>
 
         <Viewbox Grid.Row="1"
@@ -32,9 +32,9 @@
             <Canvas x:Name ="GameCanvas"
                 Grid.Row="1"
                 Grid.Column="1"
-                Background="#ADD8E6"
-                Width="251"
-                Height="500"
+                Background="#FFB6A1" 
+                Width="250"
+                Height="510"
                 ClipToBounds="True"
                 Loaded="GameCanvas_Loaded"/>
         </Viewbox>

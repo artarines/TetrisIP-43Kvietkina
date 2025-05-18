@@ -6,10 +6,14 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <AssemblyName>TetrisWPF</AssemblyName>
+    <RootNamespace>TetrisWPF</RootNamespace>
+    <ApplicationIcon>AssetsRes\green.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="AssetsRes\1.jpeg" />
+    <None Remove="AssetsRes\092.jpeg" />
+    <None Remove="AssetsRes\35.jpeg" />
     <None Remove="AssetsRes\Aesthetic Pink Wallpaper.jpeg" />
     <None Remove="AssetsRes\Block-Empty.png" />
     <None Remove="AssetsRes\Block-I.png" />
@@ -19,10 +23,8 @@
     <None Remove="AssetsRes\Block-S.png" />
     <None Remove="AssetsRes\Block-T.png" />
     <None Remove="AssetsRes\Block-Z.png" />
-    <None Remove="AssetsRes\Blue.jpeg" />
-    <None Remove="AssetsRes\Blue1.jpeg" />
-    <None Remove="AssetsRes\Blue11.webp" />
-    <None Remove="AssetsRes\Red.jpeg" />
+    <None Remove="AssetsRes\Blue aura 🫐🫂🧿.jpeg" />
+    <None Remove="AssetsRes\green.ico" />
     <None Remove="AssetsRes\TileBlue.png" />
     <None Remove="AssetsRes\TileCyan.png" />
     <None Remove="AssetsRes\TileEmpty.png" />
@@ -34,7 +36,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="AssetsRes\1.jpeg" />
+    <Resource Include="AssetsRes\092.jpeg" />
+    <Resource Include="AssetsRes\35.jpeg" />
     <Resource Include="AssetsRes\Block-J.png" />
   </ItemGroup>
 
@@ -47,10 +50,8 @@
     <Resource Include="AssetsRes\Block-S.png" />
     <Resource Include="AssetsRes\Block-T.png" />
     <Resource Include="AssetsRes\Block-Z.png" />
-    <Resource Include="AssetsRes\Blue.jpeg" />
-    <Resource Include="AssetsRes\Blue1.jpeg" />
-    <Resource Include="AssetsRes\Blue11.webp" />
-    <Resource Include="AssetsRes\Red.jpeg" />
+    <Resource Include="AssetsRes\Blue aura 🫐🫂🧿.jpeg" />
+    <Resource Include="AssetsRes\green.ico" />
     <Resource Include="AssetsRes\TileBlue.png" />
     <Resource Include="AssetsRes\TileCyan.png" />
     <Resource Include="AssetsRes\TileEmpty.png" />
