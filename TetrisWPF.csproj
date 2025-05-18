@@ -23,8 +23,13 @@
     <None Remove="AssetsRes\Block-S.png" />
     <None Remove="AssetsRes\Block-T.png" />
     <None Remove="AssetsRes\Block-Z.png" />
-    <None Remove="AssetsRes\Blue aura 🫐🫂🧿.jpeg" />
+    <None Remove="AssetsRes\Blue.png" />
+    <None Remove="AssetsRes\Brown.png" />
     <None Remove="AssetsRes\green.ico" />
+    <None Remove="AssetsRes\Green.png" />
+    <None Remove="AssetsRes\LightBlue.png" />
+    <None Remove="AssetsRes\Orange.png" />
+    <None Remove="AssetsRes\Purple.png" />
     <None Remove="AssetsRes\TileBlue.png" />
     <None Remove="AssetsRes\TileCyan.png" />
     <None Remove="AssetsRes\TileEmpty.png" />
@@ -33,6 +38,7 @@
     <None Remove="AssetsRes\TilePurple.png" />
     <None Remove="AssetsRes\TileRed.png" />
     <None Remove="AssetsRes\TileYellow.png" />
+    <None Remove="AssetsRes\Yellow.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,8 +56,13 @@
     <Resource Include="AssetsRes\Block-S.png" />
     <Resource Include="AssetsRes\Block-T.png" />
     <Resource Include="AssetsRes\Block-Z.png" />
-    <Resource Include="AssetsRes\Blue aura 🫐🫂🧿.jpeg" />
+    <Resource Include="AssetsRes\Blue.png" />
+    <Resource Include="AssetsRes\Brown.png" />
     <Resource Include="AssetsRes\green.ico" />
+    <Resource Include="AssetsRes\Green.png" />
+    <Resource Include="AssetsRes\LightBlue.png" />
+    <Resource Include="AssetsRes\Orange.png" />
+    <Resource Include="AssetsRes\Purple.png" />
     <Resource Include="AssetsRes\TileBlue.png" />
     <Resource Include="AssetsRes\TileCyan.png" />
     <Resource Include="AssetsRes\TileEmpty.png" />
@@ -60,6 +71,7 @@
     <Resource Include="AssetsRes\TilePurple.png" />
     <Resource Include="AssetsRes\TileRed.png" />
     <Resource Include="AssetsRes\TileYellow.png" />
+    <Resource Include="AssetsRes\Yellow.png" />
   </ItemGroup>
 
 </Project>

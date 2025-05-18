@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TetrisWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="414" Width="736"
+        Title="Tetris" Height="414" Width="736"
         MinWidth="736" MinHeight="414"
         Foreground="Pink"
         FontFamily="Segoe UI Light" FontSize="28"

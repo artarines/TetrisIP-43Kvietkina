@@ -14,13 +14,13 @@ namespace TetrisWPF
         private readonly ImageSource[] tileImages = new ImageSource[]
         {
             new BitmapImage(new Uri("AssetsRes/TileEmpty.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/TileCyan.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/TileBlue.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/TileOrange.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/TileYellow.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/TileGreen.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/TilePurple.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/TileRed.png", UriKind.Relative))
+            new BitmapImage(new Uri("AssetsRes/Purple.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/Blue.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/Orange.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/Yellow.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/Green.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/LightBlue.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/Brown.png", UriKind.Relative))
         }; 
 
         private readonly ImageSource[] blockImages = new ImageSource[]
