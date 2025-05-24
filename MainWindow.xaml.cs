@@ -28,7 +28,6 @@ namespace TetrisWPF
             new BitmapImage(new Uri("AssetsRes/I5Block.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/IBlock.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/JBlock.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/L5Block.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/NBlock.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/OBlock.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/PBlock.png", UriKind.Relative)),

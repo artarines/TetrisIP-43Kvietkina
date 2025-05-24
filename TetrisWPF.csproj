@@ -80,7 +80,6 @@
     <Resource Include="AssetsRes\I5Block.png" />
     <Resource Include="AssetsRes\IBlock.png" />
     <Resource Include="AssetsRes\JBlock.png" />
-    <Resource Include="AssetsRes\L5Block.png" />
     <Resource Include="AssetsRes\LBlock.png" />
     <Resource Include="AssetsRes\NBlock.png" />
     <Resource Include="AssetsRes\OBlock.png" />
