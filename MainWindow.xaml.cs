@@ -90,6 +90,13 @@ namespace TetrisWPF
             return imageControls;
         }
 
+        private void UpdateState()
+        {
+            Draw(gameState);
+            LevelText.Text = $"Level: {gameState.Level}";
+            ScoreText.Text = $"Score: {gameState.Score}";
+        }
+
         private void DrawGrid(GameGrid grid)
         {
             for (int r = 0; r < grid.Rows; r++)
@@ -148,6 +155,7 @@ namespace TetrisWPF
             DrawBlock(gameState.CurrentBlock);
             DrawNextBlock(gameState.BlockQueue);
             DrawHeldBlock(gameState.HeldBlock);
+            LevelText.Text = $"Level: {gameState.Level}";
             ScoreText.Text = $"Score: {gameState.Score}";
         }
 
@@ -158,7 +166,7 @@ namespace TetrisWPF
 
             while (!gameState.GameOver)
             {
-                int delay = Math.Max(minDelay, maxDelay - (gameState.Score * delayDecrease));
+                int delay = (int)gameState.GetTimerInterval();
                 await Task.Delay(delay);
                 gameState.MoveBlockDown();
                 Draw(gameState);
@@ -208,6 +216,36 @@ namespace TetrisWPF
         {
             gameState = new GameState();
             GameOverMenu.Visibility = Visibility.Hidden;
+            previousLevel = -1;
+            await GameLoop();
+        }
+        private async void MixedMode_Click(object sender, RoutedEventArgs e)
+        {
+            gameState = new GameState();
+            gameState.SetGameMode(GameMode.Mixed); // Припускаємо метод для режиму
+            GameModeMenu.Visibility = Visibility.Hidden;
+            CurrentModeText.Text = "Current mode: Mixed";
+            previousLevel = -1;
+            await GameLoop();
+        }
+
+        private async void TetrominoMode_Click(object sender, RoutedEventArgs e)
+        {
+            gameState = new GameState();
+            gameState.SetGameMode(GameMode.Tetromino);
+            GameModeMenu.Visibility = Visibility.Hidden;
+            CurrentModeText.Text = "Current mode: Tetromino";
+            previousLevel = -1;
+            await GameLoop();
+        }
+
+        private async void PentominoMode_Click(object sender, RoutedEventArgs e)
+        {
+            gameState = new GameState();
+            gameState.SetGameMode(GameMode.Pentomino);
+            GameModeMenu.Visibility = Visibility.Hidden;
+            CurrentModeText.Text = "Current mode: Pentomino";
+            previousLevel = -1;
             await GameLoop();
         }
     }

@@ -4,7 +4,7 @@ namespace TetrisWPF
 {
     public class BlockQueue
     {
-        private readonly Block[] blocks = new Block[]
+        private readonly Block[] tetrominoblocks = new Block[]
         {
             new IBlock(),
             new JBlock(),
@@ -12,7 +12,10 @@ namespace TetrisWPF
             new OBlock(),
             new SBlock(),
             new TBlock(),
-            new ZBlock(),
+            new ZBlock()
+        };
+        private readonly Block[] pentominoblocks = new Block[] 
+        {
             //пентаміно
             new FBlock(),
             new I5Block(),
@@ -28,12 +31,25 @@ namespace TetrisWPF
         };
 
         private readonly Random random = new Random();
+        private Block[] blocks;
         // властивість для наступного блоку в черзі
         public Block NextBlock { get; private set; }
-        
+        private GameMode currentMode;
         public BlockQueue()
         {
+            SetGameMode(GameMode.Tetromino);
             NextBlock = RandomBlock();
+        }
+
+        public void SetGameMode(GameMode mode)
+        {
+            currentMode = mode;
+            if (mode == GameMode.Tetromino)
+                blocks = tetrominoblocks;
+            else if (mode == GameMode.Pentomino)
+                blocks = pentominoblocks;
+            else 
+                blocks = tetrominoblocks.Concat(pentominoblocks).ToArray();
         }
         // метод який повертає рандомний блок
         private Block RandomBlock()
@@ -44,12 +60,7 @@ namespace TetrisWPF
         public Block GetAndUpdate()
         {
             Block block = NextBlock;
-            do
-            {
-                NextBlock = RandomBlock();
-            }
-            while (block.Id == NextBlock.Id);
-            
+            NextBlock = RandomBlock();
             return block;
         }
     }
