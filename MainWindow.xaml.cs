@@ -59,6 +59,7 @@ namespace TetrisWPF
         private readonly int maxDelay = 1000;
         private readonly int minDelay = 75;
         private readonly int delayDecrease = 25;
+        private int previousLevel = -1;
 
         private GameState gameState = new GameState();
         public MainWindow()

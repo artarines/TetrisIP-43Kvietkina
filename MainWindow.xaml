@@ -75,7 +75,7 @@
                    Width="125"/>
         </StackPanel>
 
-        <!--<Grid x:Name="GameModeMenu"
+        <Grid x:Name="GameModeMenu"
               Background="#CC000000"
               Grid.RowSpan="2"
               Grid.ColumnSpan="3"
@@ -128,7 +128,7 @@
                            Foreground="LightGray"
                            Height="42"/>
             </StackPanel>
-        </Grid>-->
+        </Grid>
 
         <Grid x:Name="GameOverMenu"
               Background="#CC000000"
