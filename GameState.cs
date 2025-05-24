@@ -1,6 +1,6 @@
 ﻿namespace TetrisWPF
 {
-    public enum GameMode { Tetromino, Pentomino, Mixed }
+    public enum GameMode { Tetramino, Pentamino, Mixed }
     public class GameState
     {
         private Block currentBlock;
@@ -29,7 +29,7 @@
         public bool GameOver { get; private set; }
         public int Score { get; private set; }
         public int Level { get; private set; } = 0;
-        public GameMode CurrentMode { get; private set; } = GameMode.Tetromino; //початковий режим
+        public GameMode CurrentMode { get; private set; } = GameMode.Tetramino; //початковий режим
         public Block  HeldBlock { get; private set; }
         public bool CanHold { get; private set; }
 
