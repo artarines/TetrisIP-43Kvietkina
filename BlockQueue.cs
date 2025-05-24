@@ -14,7 +14,7 @@ namespace TetrisWPF
             new TBlock(),
             new ZBlock()
         };
-        private readonly Block[] pentominoblocks = new Block[] 
+        private readonly Block[] pentominoblocks = new Block[]
         {
             //пентаміно
             new FBlock(),
@@ -48,7 +48,7 @@ namespace TetrisWPF
                 blocks = tetrominoblocks;
             else if (mode == GameMode.Pentomino)
                 blocks = pentominoblocks;
-            else 
+            else
                 blocks = tetrominoblocks.Concat(pentominoblocks).ToArray();
         }
         // метод який повертає рандомний блок

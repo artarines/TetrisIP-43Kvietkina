@@ -24,8 +24,8 @@
             }
         }
 
-        public GameGrid GameGrid { get; }
-        public BlockQueue BlockQueue { get; }
+        public GameGrid GameGrid { get; private set; }
+        public BlockQueue BlockQueue { get; private set;}
         public bool GameOver { get; private set; }
         public int Score { get; private set; }
         public int Level { get; private set; } = 0;
