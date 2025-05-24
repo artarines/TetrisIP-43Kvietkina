@@ -23,6 +23,7 @@
                 }
             }
         }
+        public bool IsGameActive { get; set; } = false;
 
         public GameGrid GameGrid { get; private set; }
         public BlockQueue BlockQueue { get; private set;}
@@ -34,7 +35,7 @@
         public bool CanHold { get; private set; }
 
         public GameState()
-        {
+        { 
             GameGrid = new GameGrid(22, 10);
             BlockQueue = new BlockQueue(CurrentMode);
             CurrentBlock = BlockQueue.GetAndUpdate();
