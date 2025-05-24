@@ -219,7 +219,6 @@ namespace TetrisWPF
             gameState = new GameState();
             GameOverMenu.Visibility = Visibility.Hidden;
             previousLevel = -1;
-            //CurrentModeText.Text = $"Current mode: {currentGameMode}";
             GameTypeTextBlock.Text = $"Game Type: {currentGameMode}";
             await GameLoop();
         }
@@ -228,7 +227,6 @@ namespace TetrisWPF
             gameState = new GameState();
             gameState.SetGameMode(GameMode.Mixed); // Припускаємо метод для режиму
             GameModeMenu.Visibility = Visibility.Hidden;
-            //CurrentModeText.Text = "Current mode: Mixed";
             GameTypeTextBlock.Text = "Game mode: Mixed";
             previousLevel = -1;
             await GameLoop();
@@ -239,7 +237,6 @@ namespace TetrisWPF
             gameState = new GameState();
             gameState.SetGameMode(GameMode.Tetramino);
             GameModeMenu.Visibility = Visibility.Hidden;
-            //CurrentModeText.Text = "Current mode: Tetromino";
             GameTypeTextBlock.Text = "Game mode: Tetramino";
             previousLevel = -1;
             await GameLoop();
@@ -250,7 +247,6 @@ namespace TetrisWPF
             gameState = new GameState();
             gameState.SetGameMode(GameMode.Pentamino);
             GameModeMenu.Visibility = Visibility.Hidden;
-            //CurrentModeText.Text = "Current mode: Pentomino"
             GameTypeTextBlock.Text = "Game mode: Pentamino";
             previousLevel = -1;
             await GameLoop();

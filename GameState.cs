@@ -36,7 +36,7 @@
         public GameState()
         {
             GameGrid = new GameGrid(22, 10);
-            BlockQueue = new BlockQueue();
+            BlockQueue = new BlockQueue(CurrentMode);
             CurrentBlock = BlockQueue.GetAndUpdate();
             CanHold = true;
         }

@@ -35,9 +35,9 @@ namespace TetrisWPF
         // властивість для наступного блоку в черзі
         public Block NextBlock { get; private set; }
         private GameMode currentMode;
-        public BlockQueue()
+        public BlockQueue(GameMode mode)
         {
-            SetGameMode(GameMode.Tetramino);
+            SetGameMode(mode);
             NextBlock = RandomBlock();
         }
 
