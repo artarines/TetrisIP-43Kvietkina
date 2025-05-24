@@ -91,7 +91,13 @@
                     MoveRowDown(r, cleared);
                 }
             }
-            return cleared;
+            // 1 очко за кожну лінію + 5 бонусних очок за кожну додакову лінію 
+            int score = cleared * 1;
+            if (cleared > 1)
+            {
+                score += (cleared - 1) * 5;
+            }
+            return score;
         }
     }
 }
