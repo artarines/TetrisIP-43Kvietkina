@@ -6,33 +6,43 @@ using System.Windows.Media.Imaging;
 
 namespace TetrisWPF
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary
+    // Interaction logic for MainWindow.xaml
     public partial class MainWindow : Window
     {
         private readonly ImageSource[] tileImages = new ImageSource[]
         {
             new BitmapImage(new Uri("AssetsRes/TileEmpty.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Purple.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Blue.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Orange.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Yellow.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Green.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/LightBlue.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Brown.png", UriKind.Relative))
+            new BitmapImage(new Uri("AssetsRes/PurpleTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/BlueTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/OrangeTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/YellowTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/GreenTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/PinkTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/CyanTile.png", UriKind.Relative))
         }; 
 
         private readonly ImageSource[] blockImages = new ImageSource[]
         {
-            new BitmapImage(new Uri("AssetsRes/Block-Empty.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Block-I.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Block-J.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Block-L.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Block-O.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Block-S.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Block-T.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Block-Z.png", UriKind.Relative))
+            new BitmapImage(new Uri("AssetsRes/EmptyBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/FBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/I5Block.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/IBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/JBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/L5Block.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/NBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/OBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/PBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/SBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/T5Block.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/TBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/UBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/VBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/WBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/XBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/YBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/Z5Block.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/ZBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/LBlock.png", UriKind.Relative))
         };
 
         private readonly Image[,] imageControls;

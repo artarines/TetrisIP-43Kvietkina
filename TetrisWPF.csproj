@@ -24,12 +24,27 @@
     <None Remove="AssetsRes\Block-T.png" />
     <None Remove="AssetsRes\Block-Z.png" />
     <None Remove="AssetsRes\Blue.png" />
+    <None Remove="AssetsRes\BlueTile.png" />
     <None Remove="AssetsRes\Brown.png" />
+    <None Remove="AssetsRes\CyanTile.png" />
+    <None Remove="AssetsRes\EmptyBlock.png" />
+    <None Remove="AssetsRes\FBlock.png" />
     <None Remove="AssetsRes\green.ico" />
-    <None Remove="AssetsRes\Green.png" />
-    <None Remove="AssetsRes\LightBlue.png" />
-    <None Remove="AssetsRes\Orange.png" />
-    <None Remove="AssetsRes\Purple.png" />
+    <None Remove="AssetsRes\GreenTile.png" />
+    <None Remove="AssetsRes\I5Block.png" />
+    <None Remove="AssetsRes\IBlock.png" />
+    <None Remove="AssetsRes\JBlock.png" />
+    <None Remove="AssetsRes\L5Block.png" />
+    <None Remove="AssetsRes\LBlock.png" />
+    <None Remove="AssetsRes\NBlock.png" />
+    <None Remove="AssetsRes\OBlock.png" />
+    <None Remove="AssetsRes\OrangeTile.png" />
+    <None Remove="AssetsRes\PBlock.png" />
+    <None Remove="AssetsRes\PinkTile.png" />
+    <None Remove="AssetsRes\PurpleTile.png" />
+    <None Remove="AssetsRes\SBlock.png" />
+    <None Remove="AssetsRes\T5Block.png" />
+    <None Remove="AssetsRes\TBlock.png" />
     <None Remove="AssetsRes\TileBlue.png" />
     <None Remove="AssetsRes\TileCyan.png" />
     <None Remove="AssetsRes\TileEmpty.png" />
@@ -38,40 +53,53 @@
     <None Remove="AssetsRes\TilePurple.png" />
     <None Remove="AssetsRes\TileRed.png" />
     <None Remove="AssetsRes\TileYellow.png" />
+    <None Remove="AssetsRes\UBlock.png" />
+    <None Remove="AssetsRes\VBlock.png" />
+    <None Remove="AssetsRes\WBlock.png" />
+    <None Remove="AssetsRes\XBlock.png" />
+    <None Remove="AssetsRes\YBlock.png" />
     <None Remove="AssetsRes\Yellow.png" />
+    <None Remove="AssetsRes\YellowTile.png" />
+    <None Remove="AssetsRes\Z5Block.png" />
+    <None Remove="AssetsRes\ZBlock.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="AssetsRes\092.jpeg" />
     <Resource Include="AssetsRes\35.jpeg" />
-    <Resource Include="AssetsRes\Block-J.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="AssetsRes\Aesthetic Pink Wallpaper.jpeg" />
-    <Resource Include="AssetsRes\Block-Empty.png" />
-    <Resource Include="AssetsRes\Block-I.png" />
-    <Resource Include="AssetsRes\Block-L.png" />
-    <Resource Include="AssetsRes\Block-O.png" />
-    <Resource Include="AssetsRes\Block-S.png" />
-    <Resource Include="AssetsRes\Block-T.png" />
-    <Resource Include="AssetsRes\Block-Z.png" />
-    <Resource Include="AssetsRes\Blue.png" />
-    <Resource Include="AssetsRes\Brown.png" />
+    <Resource Include="AssetsRes\BlueTile.png" />
+    <Resource Include="AssetsRes\CyanTile.png" />
+    <Resource Include="AssetsRes\EmptyBlock.png" />
+    <Resource Include="AssetsRes\FBlock.png" />
     <Resource Include="AssetsRes\green.ico" />
-    <Resource Include="AssetsRes\Green.png" />
-    <Resource Include="AssetsRes\LightBlue.png" />
-    <Resource Include="AssetsRes\Orange.png" />
-    <Resource Include="AssetsRes\Purple.png" />
-    <Resource Include="AssetsRes\TileBlue.png" />
-    <Resource Include="AssetsRes\TileCyan.png" />
+    <Resource Include="AssetsRes\GreenTile.png" />
+    <Resource Include="AssetsRes\I5Block.png" />
+    <Resource Include="AssetsRes\IBlock.png" />
+    <Resource Include="AssetsRes\JBlock.png" />
+    <Resource Include="AssetsRes\L5Block.png" />
+    <Resource Include="AssetsRes\LBlock.png" />
+    <Resource Include="AssetsRes\NBlock.png" />
+    <Resource Include="AssetsRes\OBlock.png" />
+    <Resource Include="AssetsRes\OrangeTile.png" />
+    <Resource Include="AssetsRes\PBlock.png" />
+    <Resource Include="AssetsRes\PinkTile.png" />
+    <Resource Include="AssetsRes\PurpleTile.png" />
+    <Resource Include="AssetsRes\SBlock.png" />
+    <Resource Include="AssetsRes\T5Block.png" />
+    <Resource Include="AssetsRes\TBlock.png" />
     <Resource Include="AssetsRes\TileEmpty.png" />
-    <Resource Include="AssetsRes\TileGreen.png" />
-    <Resource Include="AssetsRes\TileOrange.png" />
-    <Resource Include="AssetsRes\TilePurple.png" />
-    <Resource Include="AssetsRes\TileRed.png" />
-    <Resource Include="AssetsRes\TileYellow.png" />
-    <Resource Include="AssetsRes\Yellow.png" />
+    <Resource Include="AssetsRes\UBlock.png" />
+    <Resource Include="AssetsRes\VBlock.png" />
+    <Resource Include="AssetsRes\WBlock.png" />
+    <Resource Include="AssetsRes\XBlock.png" />
+    <Resource Include="AssetsRes\YBlock.png" />
+    <Resource Include="AssetsRes\YellowTile.png" />
+    <Resource Include="AssetsRes\Z5Block.png" />
+    <Resource Include="AssetsRes\ZBlock.png" />
   </ItemGroup>
 
 </Project>

@@ -12,17 +12,31 @@ namespace TetrisWPF
             new OBlock(),
             new SBlock(),
             new TBlock(),
+            new ZBlock(),
+            //пентаміно
+            new L5Block(),
+            new I5Block(),
+            new FBlock(),
+            new NBlock(),
+            new PBlock(),
+            new T5Block(),
+            new UBlock(),
+            new VBlock(),
+            new WBlock(),
+            new XBlock(),
+            new YBlock(),
             new ZBlock()
         };
 
         private readonly Random random = new Random();
         // властивість для наступного блоку в черзі
         public Block NextBlock { get; private set; }
-        // метод який повертає рандомний блок
+        
         public BlockQueue()
         {
             NextBlock = RandomBlock();
         }
+        // метод який повертає рандомний блок
         private Block RandomBlock()
         {
             return blocks[random.Next(blocks.Length)];
