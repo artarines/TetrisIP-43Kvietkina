@@ -14,8 +14,8 @@ namespace TetrisWPF
             new TBlock(),
             new ZBlock(),
             //пентаміно
-            new I5Block(),
             new FBlock(),
+            new I5Block(),
             new NBlock(),
             new PBlock(),
             new T5Block(),
@@ -24,7 +24,7 @@ namespace TetrisWPF
             new WBlock(),
             new XBlock(),
             new YBlock(),
-            new ZBlock()
+            new Z5Block()
         };
 
         private readonly Random random = new Random();

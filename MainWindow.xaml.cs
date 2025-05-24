@@ -12,36 +12,47 @@ namespace TetrisWPF
         private readonly ImageSource[] tileImages = new ImageSource[]
         {
             new BitmapImage(new Uri("AssetsRes/TileEmpty.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/PurpleTile.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/BlueTile.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/OrangeTile.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/YellowTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/PurpleTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/OrangeTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/PinkTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/BlueTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/CyanTile.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/GreenTile.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/PinkTile.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/CyanTile.png", UriKind.Relative))
+            new BitmapImage(new Uri("AssetsRes/YellowTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/GreenTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/YellowTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/CyanTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/GreenTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/OrangeTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/BlueTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/PinkTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/BlueTile.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/PurpleTile.png", UriKind.Relative))
         }; 
 
         private readonly ImageSource[] blockImages = new ImageSource[]
         {
             new BitmapImage(new Uri("AssetsRes/EmptyBlock.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/FBlock.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/I5Block.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/IBlock.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/JBlock.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/NBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/LBlock.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/OBlock.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/PBlock.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/SBlock.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/T5Block.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/TBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/ZBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/FBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/I5Block.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/NBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/PBlock.png", UriKind.Relative)),
+            new BitmapImage(new Uri("AssetsRes/T5Block.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/UBlock.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/VBlock.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/WBlock.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/XBlock.png", UriKind.Relative)),
             new BitmapImage(new Uri("AssetsRes/YBlock.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/Z5Block.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/ZBlock.png", UriKind.Relative)),
-            new BitmapImage(new Uri("AssetsRes/LBlock.png", UriKind.Relative))
+            new BitmapImage(new Uri("AssetsRes/Z5Block.png", UriKind.Relative))
         };
 
         private readonly Image[,] imageControls;
@@ -100,7 +111,7 @@ namespace TetrisWPF
                 imageControls[p.Row, p.Column].Source = tileImages[block.Id];
             }
         }
-        
+
         private void DrawNextBlock(BlockQueue blockQueue)
         {
             Block next = blockQueue.NextBlock;
@@ -139,7 +150,7 @@ namespace TetrisWPF
             DrawHeldBlock(gameState.HeldBlock);
             ScoreText.Text = $"Score: {gameState.Score}";
         }
-        
+
         // метод ігрового циклу
         private async Task GameLoop()
         {
@@ -192,7 +203,7 @@ namespace TetrisWPF
         {
             await GameLoop();
         }
-        
+
         private async void PlayAgain_Click(object sender, RoutedEventArgs e)
         {
             gameState = new GameState();
