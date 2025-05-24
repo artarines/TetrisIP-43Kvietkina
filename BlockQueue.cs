@@ -14,7 +14,6 @@ namespace TetrisWPF
             new TBlock(),
             new ZBlock(),
             //пентаміно
-            new L5Block(),
             new I5Block(),
             new FBlock(),
             new NBlock(),
