@@ -92,10 +92,22 @@
                 }
             }
             // 1 очко за кожну лінію + 5 бонусних очок за кожну додакову лінію 
-            int score = cleared * 1;
-            if (cleared > 1)
+            int score = cleared * 100;
+            if (cleared == 2)
             {
-                score += (cleared - 1) * 5;
+                score += 100; // 300 - 200 = 100 бонус
+            }
+            else if (cleared == 3)
+            {
+                score += 400; // 700 - 300 = 400 бонус
+            }
+            else if (cleared == 4)
+            {
+                score += 1100; // 1500 - 400 = 1100 бонус
+            }
+            else if (cleared == 5)
+            {
+                score += 2000; // 2500 - 500 = 2000 бонус
             }
             return score;
         }

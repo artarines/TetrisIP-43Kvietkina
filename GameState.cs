@@ -132,16 +132,16 @@
 
         private void UpdateLevel()
         {
-            if (Score >= 300) Level = 10;
-            else if (Score >= 150) Level = 9;
-            else if (Score >= 120) Level = 8;
-            else if (Score >= 90) Level = 7;
-            else if (Score >= 80) Level = 6;
-            else if (Score >= 70) Level = 5;
-            else if (Score >= 55) Level = 4;
-            else if (Score >= 40) Level = 3;
-            else if (Score >= 25) Level = 2;
-            else if (Score >= 10) Level = 1;
+            if (Score >= 10000) Level = 10;
+            else if (Score >= 9000) Level = 9;
+            else if (Score >= 8000) Level = 8;
+            else if (Score >= 7000) Level = 7;
+            else if (Score >= 6000) Level = 6;
+            else if (Score >= 5000) Level = 5;
+            else if (Score >= 4000) Level = 4;
+            else if (Score >= 3000) Level = 3;
+            else if (Score >= 2000) Level = 2;
+            else if (Score >= 1000) Level = 1;
             else Level = 0;
         }
 
