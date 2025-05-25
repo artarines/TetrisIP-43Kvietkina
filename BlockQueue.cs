@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace TetrisWPF
 {
@@ -35,6 +36,8 @@ namespace TetrisWPF
         // властивість для наступного блоку в черзі
         public Block NextBlock { get; private set; }
         private GameMode currentMode;
+
+        private int pentaminoCount = 0;
         public BlockQueue(GameMode mode)
         {
             SetGameMode(mode);
@@ -44,6 +47,7 @@ namespace TetrisWPF
         public void SetGameMode(GameMode mode)
         {
             currentMode = mode;
+
             if (mode == GameMode.Tetramino)
                 blocks = tetraminoblocks;
             else if (mode == GameMode.Pentamino)
@@ -54,7 +58,25 @@ namespace TetrisWPF
         // метод який повертає рандомний блок
         private Block RandomBlock()
         {
-            return blocks[random.Next(blocks.Length)];
+            if (currentMode == GameMode.Pentamino)
+            { 
+                return pentaminoblocks[random.Next(pentaminoblocks.Length)];
+            }
+            else if(currentMode == GameMode.Tetramino)
+            {
+                return tetraminoblocks[random.Next(tetraminoblocks.Length)];
+            }
+            else
+            {
+                if (random.Next(2) == 0)
+                {
+                    return tetraminoblocks[random.Next(tetraminoblocks.Length)];
+                }
+                else
+                {
+                    return pentaminoblocks[random.Next(pentaminoblocks.Length)];
+                }
+            }
         }
 
         public Block GetAndUpdate()
