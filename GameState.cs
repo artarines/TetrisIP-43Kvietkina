@@ -30,7 +30,7 @@
         public bool GameOver { get; private set; }
         public int Score { get; private set; }
         public int Level { get; private set; } = 0;
-        public GameMode CurrentMode { get; private set; } = GameMode.Tetramino; //початковий режим
+        public GameMode CurrentMode { get; private set; }
         public Block  HeldBlock { get; private set; }
         public bool CanHold { get; private set; }
 
