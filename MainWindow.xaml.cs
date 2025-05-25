@@ -211,7 +211,7 @@ namespace TetrisWPF
 
         private async void GameCanvas_Loaded(object sender, RoutedEventArgs e)
         {
-            await GameLoop();
+            //await GameLoop();
         }
 
         private async void PlayAgain_Click(object sender, RoutedEventArgs e)
@@ -222,6 +222,7 @@ namespace TetrisWPF
             GameTypeTextBlock.Text = $"Game Type: {currentGameMode}";
             await GameLoop();
         }
+
         private async void MixedMode_Click(object sender, RoutedEventArgs e)
         {
             gameState = new GameState();
