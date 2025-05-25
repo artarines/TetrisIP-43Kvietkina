@@ -37,15 +37,15 @@
         public GameState()
         { 
             GameGrid = new GameGrid(22, 10);
-            BlockQueue = new BlockQueue(CurrentMode);
-            CurrentBlock = BlockQueue.GetAndUpdate();
             CanHold = true;
         }
 
         public void SetGameMode(GameMode mode)
         {
             CurrentMode = mode;
-            BlockQueue.SetGameMode(mode); // Оновлюємо чергу блоків для режиму
+
+            BlockQueue = new BlockQueue(CurrentMode);
+            CurrentBlock = BlockQueue.GetAndUpdate();
         }
 
         public double GetTimerInterval()
