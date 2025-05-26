@@ -188,8 +188,25 @@
             return drop;
         }
 
+        //public int BlockDropDistance()
+        //{
+        //    int drop = GameGrid.Rows;
+
+        //    foreach (Position p in CurrentBlock.TilePositions())
+        //    {
+        //        drop = System.Math.Min(drop, TileDropDistance(p));
+        //    }
+        //    return drop;
+        //}
+
         public int BlockDropDistance()
         {
+            if (CurrentBlock == null)
+            {
+                // Повертаємо 0 або інше значення за замовчуванням
+                return 0;
+            }
+
             int drop = GameGrid.Rows;
 
             foreach (Position p in CurrentBlock.TilePositions())
