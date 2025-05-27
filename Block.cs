@@ -11,7 +11,7 @@
         {
             offset = new Position(StartOffset.Row, StartOffset.Column);
         }
-        // напишемо метод який повертає позиції у сітці зайняті блоком з урахуванням поточного повороту та зсуву
+        // метод який повертає позиції у сітці зайняті блоком з урахуванням поточного повороту та зсуву
         public IEnumerable<Position> TilePositions()
         {
             foreach (Position p in Tiles[rotationState])

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace TetrisWPF
+﻿namespace TetrisWPF
 {
     public class BlockQueue
     {
