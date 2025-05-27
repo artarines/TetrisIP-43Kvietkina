@@ -6,7 +6,6 @@ using System.Windows.Media.Imaging;
 
 namespace TetrisWPF
 {
-    // Interaction logic for MainWindow.xaml
     public partial class MainWindow : Window
     {
         private readonly ImageSource[] tileImages = new ImageSource[]
@@ -82,7 +81,7 @@ namespace TetrisWPF
                         Width = cellSize,
                         Height = cellSize,
                     };
-                    //
+                    
                     Canvas.SetTop(imageControl, (r - 2) * cellSize + 10);
                     Canvas.SetLeft(imageControl, c * cellSize);
                     GameCanvas.Children.Add(imageControl);
@@ -226,7 +225,7 @@ namespace TetrisWPF
         private async void MixedMode_Click(object sender, RoutedEventArgs e)
         {
             gameState = new GameState();
-            gameState.SetGameMode(GameMode.Mixed); // Припускаємо метод для режиму
+            gameState.SetGameMode(GameMode.Mixed); 
             GameModeMenu.Visibility = Visibility.Hidden;
             GameTypeTextBlock.Text = "Game mode: Mixed";
             previousLevel = -1;
