@@ -144,11 +144,11 @@
                            Text="Score: "
                            FontSize="36"
                            TextAlignment="Center"/>
-                <Button Content="Play Again"
+                <Button Content="Exit game"
                         Background="LightBlue"
                         Margin="0,20,0,0"
                         Padding="5"
-                        Click="PlayAgain_Click"/>
+                        Click="ExitGame_Click"/>
             </StackPanel>
         </Grid>
     </Grid>

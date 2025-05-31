@@ -210,16 +210,12 @@ namespace TetrisWPF
 
         private async void GameCanvas_Loaded(object sender, RoutedEventArgs e)
         {
-            //await GameLoop();
+            await GameLoop();
         }
 
-        private async void PlayAgain_Click(object sender, RoutedEventArgs e)
+        private void ExitGame_Click(object sender, RoutedEventArgs e)
         {
-            gameState = new GameState();
-            GameOverMenu.Visibility = Visibility.Hidden;
-            previousLevel = -1;
-            GameTypeTextBlock.Text = $"Game Type: {currentGameMode}";
-            await GameLoop();
+            this.Close();
         }
 
         private async void MixedMode_Click(object sender, RoutedEventArgs e)
