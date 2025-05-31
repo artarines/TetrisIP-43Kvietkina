@@ -210,7 +210,7 @@ namespace TetrisWPF
 
         private async void GameCanvas_Loaded(object sender, RoutedEventArgs e)
         {
-            await GameLoop();
+            //await GameLoop();
         }
 
         private void ExitGame_Click(object sender, RoutedEventArgs e)
